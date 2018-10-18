@@ -1,0 +1,854 @@
+    1  git
+    2  apt-get install git
+    3  apt-get install wget
+    4  apt-get install libcurl4-gnutls-dev libexpat1-dev gettext   libz-dev libssl-dev
+    5  uname -v
+    6  git
+    7  apt install git
+    8  nano /etc/apt/sources.list
+    9  add-apt-repository ppa:git-core/ppa
+   10  apt-get install dit
+   11  apt-get install git
+   12  apt-get install libcurl4-gnutls-dev libexpat1-dev gettext   libz-dev libssl-dev
+   13  cd /opt/
+   14  wget http://git-scm.com/download
+   15  ls
+   16  cd ./download
+   17  ls -la
+   18  ls -la ./download 
+   19  apt update
+   20  apt install git
+   21  df -h
+   22  ls /home/
+   23  cd /home/
+   24  mkdir course
+   25  cd ./course/
+   26  mkdir lesson2
+   27  cd lesson2/
+   28  mkdir test
+   29  cd test
+   30  git init
+   31  nano test1.cf
+   32  git add -a
+   33  git add -A
+   34  git status
+   35  git
+   36  clear
+   37  git status
+   38  git commit -m "Add test1.cf"
+   39  git commit -m 'Add test1.cf'
+   40  git config --global user.email "denergym@mail.ru"
+   41  git commit -m 'Add test1.cf'
+   42  git status
+   43  git log
+   44  nano test2.cf
+   45  git status
+   46  git add -A
+   47  git status
+   48  git commit -m 'touch file test2.cf'
+   49  git log
+   50  git remote -v
+   51  ssh-keygen -t rsa
+   52  cat /root/.ssh/id_rsa.pub 
+   53  git remote add github https://github.com/Mikhail-Dyuryagin/dev1.git
+   54  git push -u github master
+   55  git remote add origin git@github.com:Mikhail-Dyuryagin/dev1.git
+   56  git push -u origin master
+   57  nano test1.cf 
+   58  git add -A
+   59  git commit -m 'Change test1.cf'
+   60  git status
+   61  git log
+   62  git push -u origin master
+   63  git status
+   64  git log
+   65  git pull -u origin master
+   66  git pull origin master
+   67  git log
+   68  pwd
+   69  cd /home/course/lesson2/
+   70  git clone git@github.com:vozerov/goapp.git
+   71  pwd
+   72  ls
+   73  cd goapp/
+   74  ls
+   75  git init
+   76  history
+   77  push -u origin master
+   78  git remote add origin git@github.com:Mikhail-Dyuryagin/goapp.git
+   79  git push -u origin master
+   80  git remote add upstream git@github.com:Mikhail-Dyuryagin/goapp.git
+   81  git push -u upstream  master
+   82  git checkout -b feature
+   83  git status
+   84  git checkout master
+   85  git status
+   86  git checkout feature
+   87  git status
+   88  go
+   89  apt install golang-go
+   90  ls
+   91  nano main
+   92  nano main.go 
+   93  go main.go 
+   94  go run main.go 
+   95  ip a
+   96  iptables -L
+   97  sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+   98  sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+   99  iptables -L
+  100  go run main.go 
+  101  sudo iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+  102  iptables -L
+  103  go run main.go 
+  104  ip a
+  105  go run main.go 
+  106  git checkout master
+  107  git checkout -b bugfix
+  108  git status
+  109  nano main.go 
+  110  git add-A
+  111  git add -A
+  112  git commit -m 'Fixed function sum'
+  113  history
+  114  push -u upstream
+  115  git push -u upstream
+  116  git checkout master
+  117  git merge bugfix master 
+  118  git status
+  119  git log
+  120  git push -u upstream
+  121  cd ..
+  122  rm -rf goapp/
+  123  git clone git@github.com:Mikhail-Dyuryagin/goapp.git
+  124  cd goapp/
+  125  git status
+  126  git checkout -b bugfix
+  127  nano main.go 
+  128  git add .
+  129  git commit -m 'Fixed function summ'
+  130  git push -u origin
+  131  history
+  132  history | grep push
+  133  git push -u origin bugfix
+  134  nano main.go 
+  135  git status
+  136  git branch master
+  137  git status
+  138  git checkout  master
+  139  git status
+  140  git branch
+  141  git checkout  bugfix
+  142  git status
+  143  git log
+  144  go run main.go 
+  145  cd /opt/?
+  146  cd /home/course/lesson2/goapp/
+  147  ls
+  148  go run main.go 
+  149  apt-get install nginx
+  150  history
+  151  history ip
+  152  history | grep ip
+  153  iptables -A INPUT -p tcp --dport 443  -j ACCEPT
+  154  iptables -L
+  155  ufw status
+  156  add-apt-repository ppa:certbot/certbot
+  157  apt-get update
+  158  apt-get install python-certbot-nginx
+  159  nano /etc/nginx/sites-available/default
+  160  nano /etc/nginx/conf.d/
+  161  nano /etc/nginx/sites-enabled/default 
+  162  nano /var/www/html/index.nginx-debian.html 
+  163  nginx restart
+  164  service nginx restart
+  165  nano /etc/nginx/conf.d/
+  166  nano /var/www/html/index.nginx-debian.html 
+  167  service nginx restart
+  168  nano /var/www/html/index.nginx-debian.html 
+  169  nano /etc/nginx/sites-enabled/default 
+  170  service nginx restart
+  171  certbot --nginx -d denergym.devops.srwx.net
+  172  apt-get install python-certbot-nginx
+  173  add-apt-repository ppa:certbot/certbot
+  174  history | gtrp apt
+  175  history | grep apt
+  176  apt-get install certbot
+  177  sudo apt-get install software-properties-common
+  178  sudo add-apt-repository ppa:certbot/certbot
+  179  sudo apt-get update
+  180  sudo apt-get install python-certbot-nginx 
+  181  sudo certbot --nginx -d denergym.devops.srwx.net
+  182  nano /etc/nginx/sites-enabled/default 
+  183  service nginx restart
+  184  nano /etc/nginx/sites-enabled/default 
+  185  service nginx restart
+  186  nano /etc/nginx/sites-enabled/default 
+  187  cp /etc/nginx/sites-enabled/default /etc/nginx/sites-enabled/defaultold
+  188  nano /etc/nginx/sites-enabled/default 
+  189  cat /etc/nginx/sites-enabled/default < /dev/null 
+  190  rm /etc/nginx/sites-enabled/default 
+  191  nano /etc/nginx/sites-enabled/default 
+  192  nano /etc/nginx/sites-enabled/defaultold 
+  193  nano /etc/nginx/sites-enabled/default 
+  194  service nginx restart
+  195  service nginx start
+  196  journalctl -xe
+  197  [A
+  198  ls -lash /etc/nginx/sites-enabled/
+  199  nano /etc/nginx/sites-enabled/default 
+  200  cp /etc/nginx/sites-enabled/default /etc/nginx/sites-enabled/defaultold2
+  201  cp /etc/nginx/sites-enabled/defaultold /etc/nginx/sites-enabled/default
+  202  nano /etc/nginx/sites-enabled/default 
+  203  service nginx start
+  204  nano /etc/nginx/sites-enabled/default 
+  205  service nginx start
+  206  service nginx restart
+  207  nano /etc/nginx/sites-enabled/default 
+  208  service nginx restart
+  209  journalctl -xe
+  210  nano /etc/nginx/sites-enabled/default 
+  211  service nginx restart
+  212  journalctl -xe
+  213  nano /etc/nginx/sites-enabled/default 
+  214  service nginx restart
+  215  journalctl -xe
+  216  clear
+  217  journalctl -xe
+  218  mv /etc/nginx/sites-enabled/defaultold* /home/
+  219  service nginx restart
+  220  nano /etc/nginx/sites-enabled/default 
+  221  service nginx restart
+  222  nano /etc/nginx/sites-enabled/default 
+  223  service nginx restart
+  224  nano /etc/nginx/sites-enabled/default 
+  225  service nginx restart
+  226  go run main.go 
+  227  nano /lib/systemd/system/goapp.service
+  228  service goapp start
+  229  nano /etc/nginx/sites-enabled/default 
+  230  service goapp start
+  231  go run main.go 
+  232  go build main.go
+  233  service goapp restart
+  234  service nginx restart
+  235  service goapp restart
+  236  ls
+  237  nano main.go 
+  238  service goapp status
+  239  nano /lib/systemd/system/goapp.service
+  240  service goapp restart
+  241  systemctl restart goapp
+  242  systemctl daemon-reloa
+  243  service goapp status
+  244  systemctl restart goapp
+  245  systemctl stop  goapp
+  246  systemctl start  goapp
+  247  systemctl status  goapp
+  248  go get
+  249  ls
+  250  ls main
+  251  nano /lib/systemd/system/goapp.service
+  252  systemctl stop  goapp
+  253  systemctl start  goapp
+  254  systemctl status  goapp
+  255  cd /home/course/lesson2/goapp/
+  256  ls
+  257  nano main
+  258  go build main_test.go 
+  259  echo $GOPATH 
+  260  export GOPATH=/home/course/lesson2/goapp
+  261  echo $GOPATH 
+  262  systemctl stop  goapp
+  263  systemctl start  goapp
+  264  systemctl status  goapp
+  265  go build main.go 
+  266  systemctl stop  goapp
+  267  systemctl start  goapp
+  268  systemctl status  goapp
+  269  main
+  270  ./main 
+  271  nano /lib/systemd/system/goapp.service
+  272  systemctl stop  goapp
+  273  systemctl start  goapp
+  274  systemctl status  goapp
+  275  go get
+  276  go install
+  277  export GOARCH=amd64
+  278  pwd
+  279  export GOPATH=`pwd`
+  280  mkdir src
+  281  rm src
+  282  rm -rf ./src
+  283  mkdir /opt/src
+  284  export GOPATH=`pwd`
+  285  cd /opt/src/
+  286  export GOPATH=`pwd`
+  287  echo GOPATH=`pwd`
+  288  cp /home/course/lesson2/goapp /opt/src/
+  289  cp /home/course/lesson2/goapp/* /opt/src/
+  290  go intall
+  291  ls
+  292  mkdir goapp
+  293  mv main.go ./goapp/
+  294  rm Jenkinsfile 
+  295  rm main
+  296  rm main.go
+  297  ls
+  298  rm main_test.go 
+  299  rm README.md 
+  300  cd goapp/
+  301  go intall
+  302  go get
+  303  go build
+  304  ls
+  305  ls goapp 
+  306  nano /lib/systemd/system/goapp.service
+  307  ls 
+  308  nano /lib/systemd/system/goapp.service
+  309  systemctl stop  goapp
+  310  systemctl start  goapp
+  311  systemctl status  goapp
+  312  ls 
+  313  nano /lib/systemd/system/goapp.service
+  314  systemctl stop  goapp
+  315  systemctl start  goapp
+  316  systemctl status  goapp
+  317  systemctl stop  goapp
+  318  chmod -R 777  /opt/src/
+  319  ls -lash /opt/src/
+  320  systemctl start  goapp
+  321  systemctl status  goapp
+  322  ls -lash /opt/src/
+  323  nano /lib/systemd/system/goapp.service
+  324  ls -lash /opt/src/
+  325  systemctl stop  goapp
+  326  systemctl start  goapp
+  327  systemctl status  goapp
+  328  nano /etc/nginx/sites-enabled/default 
+  329  cd /var/www/html/
+  330  ls
+  331  git clone https://github.com/vozerov/goapp-web.git
+  332  ls
+  333  cd goapp-web/
+  334  nano index.html 
+  335  nano app.js 
+  336  cp index.html /var/www/html/
+  337  cp app.js  /var/www/html/
+  338  cd ..
+  339  ls
+  340  nano index.
+  341  nano index.html 
+  342  nano /etc/nginx/sites-enabled/default 
+  343  service nginx restart
+  344  service status restart
+  345  service nginx status
+  346  nano /etc/nginx/sites-enabled/default 
+  347  service nginx status
+  348  service status restart
+  349  service nginx restart
+  350  service status restart
+  351  service nginx status
+  352  apt-get install php-fpm
+  353  cd ..
+  354  cd /opt/src/goapp/
+  355  nano diff.php
+  356  nano /etc/nginx/sites-enabled/default 
+  357  mv diff.php /var/www/html/
+  358  service nginx status
+  359  service nginx restart
+  360  service nginx status
+  361  nano /etc/nginx/snippets/fastcgi-php.conf 
+  362  nano /opt/src/goapp/main.go 
+  363  rm /opt/src/goapp/main.go 
+  364  nano /opt/src/goapp/main.go 
+  365  history | go
+  366  history | grep go
+  367  ls
+  368  rm goapp
+  369  go build
+  370  nano /opt/src/goapp/main.go 
+  371  go build
+  372  nano /home/course/lesson2/goapp/main.go 
+  373  nano /opt/src/goapp/main.go 
+  374  go build
+  375  nano /opt/src/goapp/main.go 
+  376  go build
+  377  nano /opt/src/goapp/main.go 
+  378  cp /home/course/lesson2/goapp/main.go /opt/src/
+  379  cp /home/course/lesson2/goapp/main.go /opt/src/goapp/main.go 
+  380  nano /opt/src/goapp/main.go 
+  381  go build
+  382  nano /opt/src/goapp/main.go 
+  383  go build
+  384  nano /etc/nginx/sites-enabled/default 
+  385  nano /var/www/html/diff.php 
+  386  nano /var/www/html/app.js 
+  387  serice nginx restart
+  388  service nginx restart
+  389  service nginx status
+  390  nano /var/www/html/diff.php 
+  391  nano /var/www/html/app.js 
+  392  nano /etc/nginx/sites-enabled/default 
+  393  service nginx restart
+  394  service nginx status
+  395  nano /etc/nginx/sites-enabled/default 
+  396  service nginx restart
+  397  service nginx status
+  398  cat /var/log/nginx/access.log
+  399  nano /etc/nginx/sites-enabled/default 
+  400  service nginx restart
+  401  service nginx status
+  402  cat /var/log/nginx/access.log
+  403  nano /var/www/html/app.js 
+  404  nano /var/www/html/index.html 
+  405  nano /var/www/html/app.js 
+  406  ls -lash /var/www/html/app.js
+  407  ls -lash /var/www/html/diff.php §§§§
+  408  nano /var/www/html/diff.php 
+  409  cat /var/log/nginx/error.log
+  410  nano /var/www/html/diff.php 
+  411  nano /var/www/html/app.js 
+  412  nano /var/www/html/index.html 
+  413  nano /var/www/html/app.js 
+  414  nano /var/www/html/diff.php 
+  415  nano /var/www/html/app.js 
+  416  service nginx restart
+  417  nano /var/www/html/app.js 
+  418  service nginx restart
+  419  nano /var/www/html/app.js 
+  420  nano /var/www/html/index.html 
+  421  nano /var/www/html/app.js 
+  422  nano /var/www/html/index.html 
+  423  cp /home/course/lesson2/goapp/main.go /opt/src/goapp/main.go 
+  424  cd /opt/src/goapp/
+  425  nano /etc/nginx/sites-enabled/default 
+  426  service nginx restart
+  427  nano /opt/src/goapp/main.go 
+  428  go build
+  429  nano /opt/src/goapp/main.go 
+  430  go run main.go 
+  431  nano /opt/src/goapp/main.go 
+  432  go run main.go 
+  433  nano /var/www/html/app.js 
+  434  nano /opt/src/goapp/main.go 
+  435  go run main.go 
+  436  nano /opt/src/goapp/main.go 
+  437  go run main.go 
+  438  nano /opt/src/goapp/main.go 
+  439  go run main.go 
+  440  nano /opt/src/goapp/main.go 
+  441  go run main.go 
+  442  service goapp stop
+  443  go run main.go 
+  444  nano /opt/src/goapp/main.go 
+  445  go run main.go 
+  446  go build
+  447  service goapp start
+  448  service goapp status
+  449  nano /etc/nginx/sites-enabled/default 
+  450  service nginx restart
+  451  service nginx status
+  452  nano /var/www/html/app.js 
+  453  nano /etc/passwd
+  454  nano /var/www/html/diff.php 
+  455  nano /var/www/html/app.js 
+  456  nano /opt/src/goapp/main.go 
+  457  service goapp stop
+  458  go build
+  459  service goapp start
+  460  service goapp status
+  461  nano /opt/src/goapp/main.go 
+  462  nano /var/www/html/app.js 
+  463  nano /var/www/html/index.
+  464  nano /var/www/html/index.html 
+  465  nano /etc/nginx/sites-enabled/default 
+  466  service nginx start
+  467  service nginx restart
+  468  service nginx status
+  469  nano /etc/nginx/sites-enabled/default 
+  470  shutdown -r now
+  471  service goapp status
+  472  service goapp start
+  473  service goapp status
+  474  nano /var/www/html/app.js 
+  475  nano /var/log/nginx/error.log
+  476  systemctl enable goapp
+  477  cd /opt/src/goapp/
+  478  git init
+  479  git status
+  480  git add .
+  481  git commit -m "Summ API"
+  482  nano /var/www/html/app.js 
+  483  nano /var/www/html/index.html 
+  484  nano /var/www/html/app.js 
+  485  service nginx restart
+  486  nano /var/www/html/index.html 
+  487  nano /var/www/html/app.js 
+  488  shutdown -r now
+  489  cd /var/www/html/app.js 
+  490  cd /var/www/html/
+  491  git init
+  492  git add .
+  493  git commit -m "add index and app"
+  494  history | grep git
+  495  mkdir /home/course/lesson3/
+  496  cp /var/www/html/index.html /home/course/lesson3/
+  497  cp /var/www/html/app.js /home/course/lesson3/
+  498  cp /opt/src/goapp/goapp /home/course/lesson3/
+  499  cp /opt/src/goapp/main.go /home/course/lesson3/
+  500  cp /var/www/html/diff.php /home/course/lesson3/
+  501  mkdir /goapp-clone
+  502  git@github.com:Mikhail-Dyuryagin/goapp-web.git
+  503  git clone git@github.com:Mikhail-Dyuryagin/goapp-web.git
+  504  cd /goapp-clone/
+  505  git clone git@github.com:Mikhail-Dyuryagin/goapp-web.git
+  506  cd /goapp-clone/
+  507  cd goapp-web/
+  508  nano app.js 
+  509  git branch bugfix
+  510  nano app.js 
+  511  git status 
+  512  git checkout bugfix
+  513  nano app.js 
+  514  nano index.html 
+  515  git add .
+  516  nano index.html 
+  517  git commit -m 'Change form id for function diff'
+  518  history | grep git
+  519  push -u origin bugfix
+  520  git push -u origin bugfix
+  521  cd /home/course/lesson3/
+  522  ls
+  523  cp /etc/nginx/sites-enabled/default 
+  524  cp /etc/nginx/sites-enabled/default pwd
+  525  ls
+  526  cp /etc/nginx/sites-enabled/default ./
+  527  ls
+  528  nano default 
+  529  nano main.go 
+  530  nano diff.php 
+  531  git init
+  532  git add.
+  533  git add .
+  534  git commit -m 'First'
+  535  git remote add origin git@github.com:Mikhail-Dyuryagin/goapp-api.git
+  536  git push -u origin master
+  537  rm pwd
+  538  ls
+  539  git add .
+  540  git commit -m 'Remove'
+  541  git push -u origin master
+  542  git status
+  543  git log
+  544  git reset f4fb76d0ebb1c78b9d5ae5a3d5633a2b32b2427c
+  545  git log
+  546  git revert f4fb76d0ebb1c78b9d5ae5a3d5633a2b32b2427c
+  547  git status
+  548  git push -u origin master
+  549  who a
+  550  who
+  551  last
+  552  nano /home/course/lesson2/goapp/main.go 
+  553  exit
+  554  cd /etc/nginx/sites-enabled/
+  555  ls -la
+  556  cat default 
+  557  ls -la /var/www/html/
+  558  ls -la /var/www/html/goapp-web/
+  559  systemctl cat goapp
+  560  crontab -l
+  561  sudo certbot renew --dry-run
+  562  crontab -e
+  563  crontab -l
+  564  cp /var/www/html/diff.php /opt/src/
+  565  nano /etc/nginx/sites-enabled/default 
+  566  cp /etc/nginx/sites-enabled/default /etc/nginx/sites-enabled/denergym.devops.srwx.net
+  567  rm /etc/nginx/sites-enabled/default 
+  568  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  569  service nginx restart
+  570  service nginx status
+  571  rm -rf /var/www/html/.git/
+  572  rm -rf /var/www/html/goapp-web/
+  573  mkdir  /var/www/denergym.devops.srwx.net 
+  574  mv /var/www/denergym.devops.srwx.net/diff.php 
+  575  ls /var/www/html/
+  576  nano /var/www/denergym.devops.srwx.net/diff.php 
+  577  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  578  service nginx status
+  579  service nginx restart
+  580  service nginx status
+  581  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  582  service nginx restart
+  583  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  584  service nginx restart
+  585  service nginx stop
+  586  service nginx start
+  587  journalctl -xe
+  588  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  589  cp /var/www/denergym.devops.srwx.net/diff.php /var/www/html/
+  590  ls /var/www/html/
+  591  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  592  service nginx start
+  593  journalctl -xe
+  594  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  595  service nginx start
+  596  journalctl -xe
+  597  service nginx start
+  598  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  599  last
+  600  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  601  nano /etc/php/7.0/fpm/pool.d/www.conf
+  602  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  603  service nginx restart
+  604  service nginx status
+  605  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  606  service nginx restart
+  607  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  608  cp /var/www/html/diff.php /var/www/html/index.php
+  609  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  610  service nginx restart
+  611  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  612  service nginx restart
+  613  service nginx status
+  614  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  615  service nginx restart
+  616  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  617  service nginx restart
+  618  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  619  service nginx restart
+  620  service nginx status
+  621  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  622  service nginx restart
+  623  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  624  history | grep iptables
+  625  iptables -A INPUT -p tcp --dport 8081 -j ACCEPT
+  626  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  627  service nginx restart
+  628  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  629  service nginx restart
+  630  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  631  service nginx restart
+  632  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  633  service nginx restart
+  634  history | grep php
+  635  nano /etc/php/7.0/fpm/pool.d/www.conf 
+  636  nano /etc/php/7.0/fpm/php-fpm.conf 
+  637  iptables -A INPUT -p tcp --dport 9000 -j ACCEPT
+  638  service nginx restart
+  639  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  640  service nginx restart
+  641  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  642  nano /var/www/html/index.php 
+  643  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  644  service nginx restart
+  645  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  646  service nginx restart
+  647  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  648  netstat
+  649  netstat | grep php
+  650  netstat | grep 9000
+  651  service nginx restart
+  652  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  653  service nginx restart
+  654  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  655  service nginx restart
+  656  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  657  service nginx restart
+  658  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  659  service nginx restart
+  660  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  661  service nginx restart
+  662  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  663  service nginx restart
+  664  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  665  service nginx restart
+  666  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  667  service nginx restart
+  668  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  669  service nginx restart
+  670  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  671  service nginx restart
+  672  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  673  service nginx restart
+  674  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  675  service nginx restart
+  676  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  677  service nginx restart
+  678  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  679  service nginx restart
+  680  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  681  service nginx restart
+  682  journalctl -xe
+  683  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  684  service nginx restart
+  685  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  686  journalctl -xe
+  687  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  688  service nginx restart
+  689  journalctl -xe
+  690  cat /var/log/nginx/error.log
+  691  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  692  service nginx restart
+  693  cat /var/log/nginx/error.log
+  694  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  695  service nginx restart
+  696  cp /etc/nginx/sites-enabled/denergym.devops.srwx.net /home/course/lesson3/
+  697  cd /home/course/lesson3/
+  698  git status
+  699  git add .
+  700  git commit -m 'add new nginx conf for site'
+  701  git push -u origin
+  702  git push -u origin master
+  703  history | grep git
+  704  git push .
+  705  git push -u origin
+  706  git branch
+  707  git push -u origin master
+  708  git pull
+  709  git push -u origin master
+  710  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  711  service nginx restart
+  712  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  713  cp /var/www/html/index.html /var/www/denergym.devops.srwx.net/
+  714  cp /var/www/html/app.js /var/www/denergym.devops.srwx.net/
+  715  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  716  service nginx restart
+  717  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  718  ls /var/www/denergym.devops.srwx.net/
+  719  rm /var/www/denergym.devops.srwx.net/index.html 
+  720  rm /var/www/denergym.devops.srwx.net/app.js 
+  721  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  722  service nginx restart
+  723  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  724  service nginx restart
+  725  cp /var/www/html/index.html /var/www/denergym.devops.srwx.net/
+  726  cp /var/www/html/app.js /var/www/denergym.devops.srwx.net/
+  727  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  728  service nginx restart
+  729  sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
+  730  cd /opt/letsencrypt/
+  731  ls
+  732  cp /etc/nginx/sites-enabled/denergym.devops.srwx.net /home/course/lesson3/
+  733  cd /home/course/lesson3/
+  734  git push -u origin 
+  735  git add .
+  736  git commit -m 'Change nginx conf'
+  737  git push -u origin master
+  738  nano denergym.devops.srwx.net 
+  739  ls
+  740  git log
+  741  git checkout cf26
+  742  ls
+  743  git branch
+  744  cd /opt/letsencrypt/
+  745  sudo -H ./letsencrypt-auto certonly --standalone -d denergym.devops.srwx.net
+  746  service nginx stop
+  747  sudo -H ./letsencrypt-auto certonly --standalone -d denergym.devops.srwx.net
+  748  ls /etc/letsencrypt/live/denergym.devops.srwx.net/
+  749  ./certbot-auto certificates
+  750  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  751  service nginx restart
+  752  service nginx status
+  753  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  754  service nginx restart
+  755  service nginx status
+  756  crontab -e
+  757  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  758  nano /etc/nginx/snippets/fastcgi-php.conf 
+  759  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  760  nano /opt/src/main.go 
+  761  nano /opt/src/goapp/main.go 
+  762  cat /var/log/faillog 
+  763  cat /var/log/letsencrypt/letsencrypt.log
+  764  crontab -e
+  765  /opt/letsencrypt/letsencrypt-auto renew
+  766  crontab -e
+  767  last
+  768  history
+  769  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  770  service nginx restart
+  771  service nginx status
+  772  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  773  service nginx restart
+  774  service nginx status
+  775  cd /etc/nginx/sites-enabled/
+  776  ls -la
+  777  cat denergym.devops.srwx.net 
+  778  cd /var/www/
+  779  ls -la
+  780  ls -la denergym.devops.srwx.net/
+  781  cd denergym.devops.srwx.net/
+  782  cat diff.php 
+  783  systemctl status goapp
+  784  ls -la op
+  785  ls -la /opt/
+  786  ls -la /opt/src/
+  787  crontab -l
+  788  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  789  cp /var/www/denergym.devops.srwx.net/diff.php /opt/src/
+  790  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  791  service nginx restart
+  792  service nginx status
+  793  nano /var/www/denergym.devops.srwx.net/diff.php
+  794  nano /opt/src/diff.php 
+  795  service nginx restart
+  796  service nginx status
+  797  nano /home/defaultold
+  798  nano /var/www/denergym.devops.srwx.net/diff.php
+  799  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  800  service nginx restart
+  801  nano /etc/nginx/sites-enabled/denergym.devops.srwx.net 
+  802  service nginx restart
+  803  service nginx status
+  804  nano /opt/src/diff.php 
+  805  last a
+  806  last
+  807  cd /home/course/lesson3/
+  808  git push -u origin
+  809  git -add .
+  810  git add .
+  811  git commit -m 'all'
+  812  git push -u origin
+  813  cp ./* /home/
+  814  git pull
+  815  history | grep pull
+  816  git pull -u origin master
+  817* git pull  
+  818  history | grep pull
+  819  gitt pull
+  820  git pull
+  821  history | grep git
+  822  git remote add origin git@github.com:Mikhail-Dyuryagin/goapp-api.git
+  823  git push -u origin master
+  824  git remote add origin git@github.com:Mikhail-Dyuryagin/less.git
+  825  cd ..
+  826  mkdir ./less
+  827  cd ./lesson3
+  828  cp /home/course/lesson3/index.html 
+  829  cp /home/course/lesson3/* /home/course/less/
+  830  cd ..
+  831  cd ./less
+  832  ls
+  833  git init
+  834  gitt add .
+  835  git add .
+  836  git commit -u '1'
+  837  git commit -u 'my'
+  838  git commit -u 'first
+  839  git commit -u 'first'
+  840  ls
+  841  git init
+  842  git status
+  843  git commit -m 'first'
+  844  git remote add origin git@github.com:Mikhail-Dyuryagin/less.git
+  845  git push -u origin master
+  846  history | grep lets
+  847  nano lets_comm.cfg
+  848  crontab -e
+  849  nano lets_comm.cfg
+  850  git add .
+  851  git commit -m 'two add lets command'
+  852  git push -u origin master
+  853  history
+  854  history > 12
